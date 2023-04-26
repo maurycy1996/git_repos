@@ -9,10 +9,8 @@ with open("02_input.txt", "r") as file:
             if i.isalpha():
                 round.append(i)
         match.append(round)
-
-match
     
-# %%
+# %% Defining function which returns your points from one round
 
 def pts(x, y):
     
@@ -38,7 +36,7 @@ def pts(x, y):
 
     return shp + res
     
-# %%
+# %% Summing all round up to a total
 
 total_pts = 0
 
