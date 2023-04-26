@@ -11,10 +11,10 @@ with open("00_Advent of Code/2022/01_calories.txt", "r") as file:
 total_cal = []
 per_elf = 0
 
-for j in cal:
-    if j:
-        j = int(j)
-        per_elf += j
+for i in cal:
+    if i:
+        i = int(i)
+        per_elf += i
     else:
         total_cal.append(per_elf)
         per_elf = 0
