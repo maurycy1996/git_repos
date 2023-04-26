@@ -1,7 +1,7 @@
 # %%
 cal = []
 
-with open("00_Advent of Code/2022/01_calories.txt", "r") as file:
+with open("01_calories.txt", "r") as file:
     for i in file:
         i = i[:-1]
         cal.append(i)
