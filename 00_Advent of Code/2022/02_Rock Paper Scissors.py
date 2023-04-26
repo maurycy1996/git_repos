@@ -40,9 +40,12 @@ def pts(x, y):
     
 # %%
 
+total_pts = 0
+
 for round in match:
     points = pts(round[0], round[1])
-    print(points)
+    total_pts += points
 
+print(f"Your total points: {total_pts}")
 
 # %%
