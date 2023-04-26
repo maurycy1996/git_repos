@@ -17,6 +17,7 @@ match
 def pts(x, y):
     
     wins = [["X", "C"], ["Y", "A"], ["Z", "B"]]
+    draws = [["X", "A"], ["Y", "B"], ["Z", "C"]]
     
     shp = 0
     res = 0
@@ -28,20 +29,20 @@ def pts(x, y):
     elif y == "Z":
         shp = 3
     
-    if x == y:
+    if [y, x] in draws:
         res = 3
     elif [y, x] in wins:
         res = 6
     else:
         res = 0 
 
-    return shp
+    return shp + res
     
 # %%
 
 for round in match:
     points = pts(round[0], round[1])
-    print(round[0] == round[1])
+    print(points)
 
 
 # %%

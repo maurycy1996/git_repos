@@ -1,5 +1,5 @@
 A Y
 B X
 C Z
-B B
+B Y
 B Z
