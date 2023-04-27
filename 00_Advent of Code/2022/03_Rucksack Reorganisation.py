@@ -2,7 +2,7 @@
 
 import string
 
-# %% Creating priorities dictionary
+# %% Creating dictionary of priorities
 
 letters = string.ascii_lowercase + string.ascii_uppercase
 
