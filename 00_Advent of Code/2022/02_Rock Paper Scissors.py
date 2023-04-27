@@ -1,4 +1,4 @@
-# %% Creating list of rounds from txt file
+# %% Creating list of rounds from the input file
 
 match = []
 
