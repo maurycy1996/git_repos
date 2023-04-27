@@ -1,4 +1,4 @@
-# %%
+# %% 1
 cal = []
 
 with open("01_calories.txt", "r") as file:
@@ -6,7 +6,7 @@ with open("01_calories.txt", "r") as file:
         i = i[:-1]
         cal.append(i)
 
-# %%
+# %% 2
 
 total_cal = []
 per_elf = 0
