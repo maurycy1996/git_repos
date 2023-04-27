@@ -11,14 +11,14 @@ priors = dict([(pair[1], pair[0]) for pair in priors_rev])
 
 # %% Create set of items duplicating in rucksack compartments
 
-itm = set()
+itm = []
 
 with open("03_input.txt", "r") as file:
     for line in file:
-        half = int((len(line)-1)/2)
+        half = int((len(line.strip()))/2)
         set1 = set(line[:half])
         set2 = set(line[half:])
-        itm = itm.union(set1.intersection(set2))
+        itm.extend(list(set1.intersection(set2)))
 
 # %% Summing up priorities of items
 
