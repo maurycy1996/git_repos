@@ -1,7 +1,7 @@
 # %% 1
 cal = []
 
-with open("01_calories.txt", "r") as file:
+with open("01_input.txt", "r") as file:
     for i in file:
         i = i[:-1]
         cal.append(i)
