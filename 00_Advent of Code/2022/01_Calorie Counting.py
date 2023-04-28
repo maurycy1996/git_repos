@@ -2,9 +2,9 @@
 cal = []
 
 with open("01_input.txt", "r") as file:
-    for i in file:
-        i = i[:-1]
-        cal.append(i)
+    for line in file:
+        line = line.strip()
+        cal.append(line)
 
 # %% 2
 
@@ -20,7 +20,9 @@ for i in cal:
         per_elf = 0
 total_cal.append(per_elf)
   
-print(f"The calory-richest elf has a total of {max(total_cal)} calories on the"\
-      " expedition.")
+print(max(total_cal))
         
+# %%
+
+print(total_cal)
 # %%
