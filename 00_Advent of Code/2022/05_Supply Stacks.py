@@ -33,9 +33,7 @@ for level in levels:
     for supp in level:
         if supp.isalpha():
             supplies[index].append(supp)
-            index += 1
-        else:
-            index += 1
+        index +=1
     index = 1
 
 # Reversing supplies in each stacks (they were swapped before)
